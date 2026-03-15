@@ -1,0 +1,48 @@
+# Node modules (backend & frontend)
+node_modules/
+
+# Environment variables
+.env
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Angular build output
+dist/
+build/
+.out/
+
+# Angular cache
+.angular/
+.cache/
+
+# Coverage reports
+coverage/
+
+# VS Code settings (optional)
+.vscode/
+
+# Temporary files
+tmp/
+temp/
+
+# Dependency directories
+jspm_packages/
+
+# Optional npm cache
+.npm
+
+# IDE files
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
