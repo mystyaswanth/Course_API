@@ -1,0 +1,21 @@
+<div class="container mt-4">
+
+<h3>Edit Course</h3>
+
+<form (ngSubmit)="updateCourse()">
+
+<input type="number" [(ngModel)]="course.courseid" name="courseid" class="form-control mb-2" readonly>
+
+<input type="text" [(ngModel)]="course.coursename" name="coursename" class="form-control mb-2">
+
+<input type="text" [(ngModel)]="course.instructor" name="instructor" class="form-control mb-2">
+
+<input type="number" [(ngModel)]="course.credits" name="credits" class="form-control mb-2">
+
+<input type="text" [(ngModel)]="course.department" name="department" class="form-control mb-2">
+
+<button class="btn btn-success">Update</button>
+
+</form>
+
+</div>

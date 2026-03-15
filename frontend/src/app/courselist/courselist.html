@@ -1,0 +1,64 @@
+<div class="card shadow-lg course-card">
+
+<div class="card-header d-flex justify-content-between align-items-center">
+
+<h4 class="mb-0">Course List</h4>
+
+<a routerLink="/courseadd" class="btn btn-primary">
++ Add Course
+</a>
+
+</div>
+
+<div class="card-body">
+
+<table class="table table-hover table-bordered text-center">
+
+<thead class="table-dark">
+
+<tr>
+<th>ID</th>
+<th>Name</th>
+<th>Instructor</th>
+<th>Credits</th>
+<th>Department</th>
+<th>Actions</th>
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr *ngFor="let c of courses">
+
+<td>{{c.courseid}}</td>
+<td>{{c.coursename}}</td>
+<td>{{c.instructor}}</td>
+<td>{{c.credits}}</td>
+<td>{{c.department}}</td>
+
+<td>
+
+<a 
+[routerLink]="['/courseedit',c.courseid]"
+class="btn btn-sm btn-warning me-2">
+Edit
+</a>
+
+<button 
+class="btn btn-sm btn-danger"
+(click)="deleteCourse(c.courseid)">
+Delete
+</button>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
